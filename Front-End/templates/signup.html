@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup-style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">Fake Review Detection System</a>
+        </div>
+        <div class="nav-buttons">
+            <a class="nav-button" href="/">Home</a>
+            <a class="nav-button" href="/login">Login</a>
+        </div>
+    </header>
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Signup</h2>
+           <form id="signupForm" action="/signup" method="post" onsubmit="return submitForm()">
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+               <label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // You can add more validation logic here
+
+            // For now, let's assume a simple validation (non-empty fields)
+            if (username === "" || email === "" || password === "") {
+                alert("Please fill in all fields");
+                return false;
+            } else {
+                // If validation passes, the form will be submitted normally
+                // The server-side code at "/your-server-endpoint" should handle the form submission
+                // and return a success status. If successful, the server should handle the redirection.
+                alert("Form submitted successfully. Waiting for server response.");
+                return true; // Allows the default form submission
+            }
+        }
+    </script>
+</body>
+</html>

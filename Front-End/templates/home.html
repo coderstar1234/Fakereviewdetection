@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-position 0.5s ease;
+            background-image: url('https://media0.giphy.com/media/5bDAc3il2DySZAFGpQ/giphy.gif');
+            background-size: cover;
+            background-position: center bottom;
+        }
+        
+
+        .header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Motion effect: right-to-left */
+            animation: slideRightToLeft 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes slideRightToLeft {
+            from {
+                margin-left: 0;
+            }
+            to {
+                margin-left: 10px; /* Adjust the distance as needed */
+            }
+        }
+
+        .logo {
+            font-size: 34px;
+            font-weight: bold;
+             text-decoration: inherit;
+            /* Additional styling for an attractive logo */
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            /* Make navigation links bold */
+            font-weight: bold;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+            position: relative;
+            font-size: 25px; /* Adjust font size as needed */
+            line-height: 1.8; /* Adjust line height as needed */
+                text-align: justify;
+                font-family: 'Arial', sans-serif; /* Set an attractive font-family */
+                letter-spacing: 0.5px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #1c6da8;
+        }
+
+        
+
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('https://th.bing.com/th/id/OIP.X9QlOFjlKHfD1LR7h--_tgHaEo?rs=1&pid=ImgDetMain');
+            background-size: cover;
+            background-position: center;
+            color: #333; /* Set text color */
+        }
+
+
+        p {
+    color: #000; /* Set text color to black */
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.8; /* Adjust line height as needed */
+    text-align: justify;
+    font-family: 'Arial', sans-serif; /* Set an attractive font-family */
+    letter-spacing: 0.5px; /* Adjust letter spacing as needed */
+}
+
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #00008b;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: darkblue;
+            padding: 20px;
+            height: 40px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            margin-right: 10px;
+        }
+
+        .search-box input {
+            padding: 10px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .algorithm-dropdown {
+            margin-right: 10px;
+        }
+
+        .algorithm-dropdown select {
+            padding: 10px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #3498db;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1c6da8;
+        }
+
+        .additional-box {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        body:hover {
+            background-position: center top;
+        }
+
+        .about {
+            background-color: #f4f4f4;
+            padding: 80px 0;
+        }
+
+        .about_img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about_text {
+            padding-left: 30px;
+        }
+
+        .about h2 span.blu {
+            color: #3498db;
+        }
+        .choose_bg {
+    background-color: #f4f4f4; /* Set the background color */
+    padding: 40px 0; /* Add padding to the top and bottom */
+}
+
+.choose_box {
+    background-color: #fff; /* Set the background color for the box */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    text-align: center;
+}
+
+.choose_box i {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.choose_box h3 {
+    color: #3498db; /* Set the heading color */
+    font-size: 24px; /* Set the heading font size */
+}
+
+.choose_box p {
+    color: #333; /* Set the paragraph text color */
+    font-size: 16px; /* Set the paragraph font size */
+    line-height: 1.6; /* Set the line height */
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="/">Fake Review Detection System</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/faq">FAQ</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <section>
+            <h1>Welcome to the Website</h1>
+            <p>This platform protects you from getting ripped off when shopping online. Join the secure shopping revolution and get the truth about products, reviews, and sellers before you buy. This system has your back when you're shopping online at home or on mobile.</p>
+            <img src="https://th.bing.com/th/id/OIP.0i1AZpkmGOFEKscea4K07QHaDV?rs=1&pid=ImgDetMain" alt="Attractive Image">
+        </section>
+        <section>
+            <h2>Fake Review Detection</h2>
+            <p>At Our Professional Website,we take fake review detection seriously. Fake reviews can undermine the trust and credibility of online platforms. Our advanced algorithms and machine learning techniques help us identify and filter out fake reviews, ensuring that users can rely on genuine and trustworthy feedback.</p>
+            <p>Key Features:</p>
+            <ul>
+                <li>Machine Learning Algorithms</li>
+                <li>Behavioral Analysis</li>
+                <li>Sentiment Analysis</li>
+                <li>Continuous Improvement</li>
+            </ul>
+            <p>Join us in creating a community built on trust and authentic experiences.</p>
+        </section>
+
+        <div class="search-container">
+            <form action="{{ url_for('root') }}" method="post" class="search-form">
+                <div class="algorithm-dropdown">
+                    <select name="algorithm">
+                        <option value="SVM">Support Vector Machines</option>
+                        <option value="lr">Logistic Regression</option>
+                        <option value="be">Navie Bayes</option>
+                    </select>
+                </div><br>
+                <button type="submit">Check</button>
+            </form>
+        </div>
+            <div id="about" class="about">
+        <div class="container-fluid">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="about_img">
+                        <!-- Replace the image source with the correct path or URL -->
+                        <figure><img src="https://blog.sodipress.com/wp-content/uploads/2020/09/EG2-Welcome-Blog-1290x860-1.jpg" alt="#"/></figure>
+                    </div>
+                </div>
+                <div class="col-md-7 about_text">
+                    <div class="titlepage">
+                        <h2>About <span class="blu">Platform</span></h2>
+                        <p>At Our Professional Website, we take fake review detection seriously. Fake reviews can undermine the trust and credibility of online platforms. Our advanced algorithms and machine learning techniques help us identify and filter out fake reviews, ensuring that users can rely on genuine and trustworthy feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="choose_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 padding_left0">
+                            <div class="choose_box">
+                                <i><img src="https://th.bing.com/th/id/OIP.LHM8e1gobXwdV7r_2vdJDgHaFK?rs=1&pid=ImgDetMain" alt="#"/></i>
+                                <h3>Our Motive</h3>
+                                <p>Our motive is to make the E-commerce world free of fake reviews.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <section class="additional-box">
+            <p>Explore our platform for reliable and authentic reviews.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Fake Review Detection System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

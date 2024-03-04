@@ -1,0 +1,140 @@
+/* Styles for the signup page */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0838e9;
+    color: #333;
+    transition: background-position 0.5s ease;
+    background-image: url('https://media0.giphy.com/media/5bDAc3il2DySZAFGpQ/giphy.gif');
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-box {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-box h2 {
+    color: #3498db;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+p {
+    margin-top: 20px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ecf0f1;
+}
+
+/* Navigation bar in the upper right corner */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #2980b9;
+}
+
+.logo {
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: none;
+    left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transition effect */
+    cursor: pointer;
+    margin-right: auto;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: inherit;
+        /* Additional styling for an attractive logo */
+        color: #113bf7;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        
+}
+
+.logo:hover {
+    transform: translateX(5px);
+    /* Add motion effect to the right */
+}
+.logo a {
+    color: #4707c9;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.8;
+        /* Adjust line height as needed */
+   text-align: justify;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.nav-button {
+    background-color: #2980b9;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #3498db;
+}

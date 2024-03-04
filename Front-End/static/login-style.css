@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0838e9;
+    color: #333;
+    transition: background-position 0.5s ease;
+    background-image: url('https://media0.giphy.com/media/5bDAc3il2DySZAFGpQ/giphy.gif');
+    background-size: cover;
+    background-position: center bottom;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-grow: 1;
+    /* Allow the login container to grow and take available space */
+}
+
+.login-box {
+    background-color: #ffffff;
+    max-width: 400px;
+    padding: 30px;
+    /* Increased padding for more space */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* Adding a subtle hover effect */
+}
+
+.login-box:hover {
+    transform: scale(1.02);
+    /* Scale up on hover for a subtle effect */
+}
+
+.login-box h2 {
+    color: #6934db;
+    /* Highlighted heading color */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    /* Increased margin for better spacing */
+    border: 1px solid #bbb;
+    /* Softer border color */
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 18px;
+    /* Increased padding for a larger button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+p {
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Right side navigation bar */
+.right-nav {
+    background-color: #3498db;
+    /* Background color for the navigation bar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.right-nav a:hover {
+    color: #2070a0;
+    /* Darker color on hover */
+}
+
+ .navigation-bar {
+     background-color: #2980b9;
+     color: #fff;
+     padding: 10px;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+ }
+
+ .navigation-bar a {
+     color: darkblue;
+     margin-right: 10px;
+     text-decoration: none;
+     transition: color 0.3s ease;
+     font-weight: bold;
+     font-size: 23px;
+ }
+
+ .navigation-bar a:hover {
+     color: darkslateblue;
+ }
