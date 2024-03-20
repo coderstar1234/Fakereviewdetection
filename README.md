@@ -1,29 +1,3 @@
-         
-                                                           Project id: -2023-MPJ-3IT-07
-                                                          Report
-                                                  on 
-
-                                 Fake Review Detection
-   Bachelor of Technology 
-Information Technology 
-By 
-	                         Himanshu Vashistha:    2102900130022
-                                    Ashish Mishra:   2102900130010
-                                   Ashwin Kumar:    2102900130011
-                       Aaftaab Ahmad Khan:     2102900130001
-  
-Under the Supervision of 
-Prof. Ms. Deepti Singh  
-
-                             ABES INSTITUTE OF TECHNOLOGY, GHAZIABAD 
- 
- 
-                                                  AFFILIATED TO
-                            Dr. A.P.J. ABDUL KALAM TECHNICAL UNIVERSITY
-         LUCKNOW, UTTAR PRADESH
-(December 2023-24) 
- 
-
 
 
 INDEX 
